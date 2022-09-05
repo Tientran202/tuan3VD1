@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="900dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+
+        <ImageView
+            android:layout_width="240dp"
+            android:layout_height="220dp"
+            android:background="@drawable/sun"
+            android:layout_marginTop="-300dp">
+
+        </ImageView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CHUẨN ĐOÁN CHỈ SỐ CƠ THỂ"
+        android:textSize="20sp"
+        android:layout_marginBottom="20dp"
+        >
+
+    </TextView>
+        <LinearLayout
+    android:layout_width="380dp"
+    android:layout_height="wrap_content"
+android:orientation="vertical"
+    android:background="@drawable/boder2"
+
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        >
+
+        <TextView
+            android:layout_width="130dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Nhập chiều cao: "
+            android:textSize="16sp">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/cao"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            >
+
+        </EditText>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#00bcd4">
+    </View>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        >
+        <TextView
+            android:layout_width="130dp"
+            android:layout_height="match_parent"
+            android:text="Nhập cân nặng:"
+            android:gravity="center"
+            android:textSize="16sp"
+            >
+
+        </TextView>
+        <EditText
+            android:id="@+id/nang"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            >
+
+        </EditText>
+    </LinearLayout>
+</LinearLayout>
+
+
+        <Button
+            android:id="@+id/buttonBMI"
+            android:layout_width="190dp"
+            android:layout_height="40dp"
+            android:text="Tính chỉ số cơ thể"
+            android:layout_gravity="center"
+            android:onClick="nhan"
+            >
+
+        </Button>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="vertical"
+
+            >
+            <TextView
+                android:id="@+id/kqSo"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:textSize="20sp"
+                >
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/kqChu"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:textSize="20sp"
+                >
+
+            </TextView>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
